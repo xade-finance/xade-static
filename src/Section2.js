@@ -77,7 +77,7 @@ function Section2() {
                     zero fees</p>
                 </div>
                 <div  className='learn__more'>
-                    <a  className='learn__moe'href='#'> Learn more</a>
+                    <a  className='learn__moe'href='https://app.xade.finance'> Learn more</a>
                 </div>
              </div>
                 
