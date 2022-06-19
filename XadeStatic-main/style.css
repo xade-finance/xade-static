@@ -1,0 +1,1832 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Style+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import "~mdb-ui-kit/css/mdb.min.css";
+
+@font-face {
+  font-family: "Lemon/Milk light Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lemon/Milk light Regular"),
+    url("./fonts/LemonMilklight.woff") format("woff");
+}
+@font-face {
+  font-family: "Abnormal Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Abnormal Regular"),
+    url("./fonts/AbnormalRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "RadioGrotesk Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Radio-Grotesk Regular"),
+    url("./fonts/RadioGrotesk-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Abnormal";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Abnormal"), url("./fonts/AbnormalBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Coolvetica";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Coolvetica"), url("./fonts/Coolvetica.woff") format("woff");
+}
+@font-face {
+  font-family: "Bebas";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bebas"), url("./fonts/Bebas.woff") format("woff");
+}
+
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.navbar {
+  padding: 0;
+  width: 100%;
+  height: 5vw;
+  padding-bottom: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-family: "Lemon/Milk light Regular", BlinkMacSystemFont;
+  color: #000;
+  padding-left: 2vw;
+  font-size: 3vw;
+  margin-top: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items {
+  padding-left: 2vw;
+  flex: 1;
+}
+
+.items li {
+  list-style: none;
+  display: inline-block;
+  padding: 1vw 1.5vw;
+  padding-top: 0px;
+  position: relative;
+  font-weight: bold;
+}
+
+.items li a {
+  text-decoration: none;
+  font-size: 1.4vw;
+  color: #000;
+  font-family: "Josefin Sans";
+  font-weight: 500;
+}
+
+hr.line {
+  margin-top: -10px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.img1 {
+  padding-top: 3vw;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  float: left;
+}
+
+.landing {
+  width: 100%;
+  height: 80vh;
+  overflow-x: visible;
+}
+
+.header {
+  margin-left: 20%;
+  width: 60%;
+  color: #000;
+  font-family: "Coolvetica";
+  font-size: 6vw;
+  margin-top: 10%;
+}
+
+.header h1 {
+  margin-top: -65%;
+  margin-left: 5%;
+  width: 100%;
+}
+
+.animate {
+  width: 70%;
+  margin-left: -10%;
+}
+
+.rw-words-1 {
+  text-align: center;
+}
+
+.rw-words-1 span {
+  font-size: 10vw;
+  margin-top: -10%;
+  margin-left: -2vw;
+  font-family: "Bebas";
+  font-weight: 700;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-animation: rotateWord 9s linear 0s infinite;
+  -moz-animation: rotateWord 9s linear 0s infinite;
+  -o-animation: rotateWord 9s linear 0s infinite;
+  -ms-animation: rotateWord 9s linear 0s infinite;
+  animation: rotateWord 9s linear 0s infinite;
+  color: #ccc;
+}
+
+.rw-words-1 span:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+  color: #9b59b6;
+}
+
+.rw-words-1 span:nth-child(2) {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  color: #2ecc71;
+}
+.rw-words-1 span:nth-child(3) {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+  color: #f1c40f;
+}
+.rw-words-1 span:nth-child(4) {
+  -webkit-animation-delay: 4.5s;
+  -moz-animation-delay: 4.5s;
+  -o-animation-delay: 4.5s;
+  -ms-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+  color: #fc4349;
+  margin-left: -7%;
+}
+
+.rw-words-1 span:nth-child(5) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+  color: #3498db;
+  margin-left: -8%;
+}
+
+.rw-words-1 span:nth-child(6) {
+  -webkit-animation-delay: 7.5s;
+  -moz-animation-delay: 7.5s;
+  -o-animation-delay: 7.5s;
+  -ms-animation-delay: 7.5s;
+  animation-delay: 7.5s;
+  color: coral;
+  margin-left: -5%;
+}
+
+@-webkit-keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -moz-transform: translateY(-30px);
+  }
+  5% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -moz-transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -o-transform: translateY(-30px);
+  }
+  5% {
+    opacity: 1;
+    -o-transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -o-transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -o-transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -ms-transform: translateY(-30px);
+  }
+  5% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -ms-transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotateWord {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.subtext {
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 15vw;
+  margin-left: -10%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.subtext a {
+  color: #000;
+  text-decoration: none;
+  padding: 0.2vw;
+  transition: 1s;
+}
+
+.subtext a:hover {
+  text-decoration: underline;
+}
+
+.webapp {
+  margin-left: 50%;
+  margin-top: 3vw;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  border-radius: 30px;
+  border: 3px solid #333;
+  background-color: #333;
+  text-align: right;
+  text-decoration: none;
+  font-size: 1.4vw;
+  color: #fff;
+  font-family: "Josefin Sans";
+  font-weight: 500;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.savings {
+  margin-top: -5.5%;
+  width: 100%;
+  height: 90vh;
+  background: transparent;
+  display: inline-block;
+}
+
+.left {
+  width: 33vw;
+  margin-top: -13%;
+  height: 100%;
+  margin-left: -55%;
+}
+
+.right {
+  width: 33vw;
+  margin-top: -65%;
+  height: 100%;
+  margin-left: 95%;
+}
+/*  background: linear-gradient(90deg, rgb(255, 183, 83) 0%, rgb(255, 173, 175) 85%, rgba(217, 141, 156, 0.7) 100%) 100% center / cover, url(https://cdn.robinhood.com/assets/generated_assets/brand/_next/static/images/noise__d63eaf5….svg) rgb(240, 170, 165);
+*/
+.savings-header {
+  background: -webkit-linear-gradient(
+    #ffd700,
+    #ffd700,
+    rgb(255, 183, 83),
+    rgb(255, 183, 83),
+    rgb(255, 183, 83)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 6.5vw;
+  letter-spacing: 0.03px;
+  padding-top: 2%;
+  text-align: center;
+}
+
+.savings-content {
+  margin-left: 5%;
+}
+
+.payment-img {
+  float: right;
+  margin-top: -25%;
+  margin-left: 5%;
+  width: 45%;
+}
+
+.earn-18 {
+  font-family: "RadioGrotesk Regular";
+  letter-spacing: 0.3px;
+  font-size: 5vw;
+  color: #000;
+  margin-top: 5%;
+}
+
+.earn-body {
+  font-family: "RadioGrotesk Regular";
+  font-size: 2.5vw;
+  color: #808080;
+  margin-top: -2%;
+  text-transform: capitalize;
+}
+
+.global {
+  margin-top: -5.5%;
+  width: 100%;
+  height: 90vh;
+  background: transparent;
+}
+/* rgba(6, 64, 19, 0.7) 0%, rgb(116, 254, 36) 79%, rgb(126, 255, 42) 100%) 100% center / cover, url(https://cdn.robinhood.com/assets/generated_assets/brand/_next/static/images/noise__d63eaf5….svg) rgb(0, 200, 5) */
+.global-header {
+  background: -webkit-linear-gradient(
+    rgb(116, 254, 36),
+    rgb(19, 168, 51),
+    rgb(97, 190, 34)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 6.5vw;
+  letter-spacing: 0.03px;
+  padding-top: 3%;
+  text-align: center;
+}
+
+.single-18 {
+  font-family: "RadioGrotesk Regular";
+  letter-spacing: 0.3px;
+  font-size: 5vw;
+  color: #000;
+  margin-left: 53%;
+  margin-top: 5%;
+}
+
+.single-body {
+  font-family: "RadioGrotesk Regular";
+  font-size: 2.5vw;
+  color: #808080;
+  margin-top: -2%;
+  margin-left: 48%;
+  text-transform: capitalize;
+}
+
+.global-img {
+  float: left;
+  margin-top: -25%;
+  margin-left: 3%;
+  width: 40%;
+}
+
+.loan {
+  margin-top: -5.5%;
+  width: 100%;
+  height: 90vh;
+  background: transparent;
+}
+
+.loan-header {
+  background: -webkit-linear-gradient(rgb(36, 254, 232), rgb(3, 221, 255));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 6.5vw;
+  letter-spacing: 0.03px;
+  padding-top: 3%;
+  text-align: center;
+}
+
+.loan-18 {
+  font-family: "RadioGrotesk Regular";
+  letter-spacing: 0.3px;
+  font-size: 5vw;
+  color: #000;
+  margin-left: 10%;
+  margin-top: 7%;
+}
+
+.loan-body {
+  font-family: "RadioGrotesk Regular";
+  font-size: 2.5vw;
+  color: #808080;
+  margin-top: -2%;
+  margin-left: 8%;
+  text-transform: capitalize;
+}
+
+.bull {
+  float: right;
+  margin-top: -30%;
+}
+
+.tools {
+  margin-top: -5.5%;
+  width: 100%;
+  height: 95vh;
+  background: transparent;
+}
+
+.tools-header {
+  background: -webkit-linear-gradient(
+    #ffd700,
+    #ffd700,
+    rgb(255, 183, 83),
+    rgb(255, 183, 83),
+    rgb(255, 183, 83)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 6.5vw;
+  letter-spacing: 0.03px;
+  padding-top: 3%;
+  text-align: center;
+}
+
+.tools-18 {
+  font-family: "RadioGrotesk Regular";
+  letter-spacing: 0.3px;
+  font-size: 5vw;
+  color: #000;
+  margin-left: 53%;
+  margin-top: 8%;
+}
+
+.tools-body {
+  font-family: "RadioGrotesk Regular";
+  font-size: 2.5vw;
+  color: #808080;
+  margin-top: -2%;
+  margin-left: 48%;
+  text-transform: capitalize;
+}
+
+.stock {
+  float: left;
+  margin-top: -32%;
+  width: 35%;
+  margin-left: 7%;
+}
+
+.security {
+  margin-top: 5%;
+  font-family: "Roboto";
+  height: 125vh;
+}
+
+.security-head {
+  text-align: left;
+  margin-left: 10%;
+}
+
+.security-header {
+  font-size: 4vw;
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  margin-right: 3px;
+  letter-spacing: 0;
+  display: inline-flex;
+}
+
+.blue_ {
+  font-size: 4vw;
+  font-family: "Josefin Sans";
+  color: #2fa4ff;
+  font-weight: bolder;
+}
+
+.explore {
+  color: rgb(188, 184, 184);
+  margin-left: 14%;
+  font-weight: 300;
+  font-size: 1.8vw;
+  font-family: "Roboto";
+}
+
+.img6 {
+  height: 40vw;
+  margin-top: -3vw;
+}
+
+.key__section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -2%;
+  margin-left: 3%;
+}
+
+.left__key {
+  box-shadow: 1vw 1vw 1.5vw rgb(189, 187, 187);
+  height: 12vw;
+  width: 45vw;
+  border-radius: 20px;
+  margin-bottom: 2vw;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.left__key1 {
+  box-shadow: 1vw 1vw 1.5vw rgb(189, 187, 187);
+  height: 10vw;
+  width: 45vw;
+  border-radius: 20px;
+  margin-bottom: 2vw;
+  display: flex;
+}
+
+.blue__side {
+  background-color: #2fa4ff;
+  box-shadow: 3px 3px 15px rgb(189, 187, 187);
+  height: 12vw;
+  width: 90px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 0px;
+}
+
+.blue__side1 {
+  background-color: #2fa4ff;
+  box-shadow: 3px 3px 15px rgb(189, 187, 187);
+  height: 10vw;
+  width: 90px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 0px;
+}
+
+.blue__sid {
+  margin-left: 20%;
+  margin-top: 60%;
+}
+
+.enabled {
+  font-size: 1.6vw;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 1.5vw;
+  letter-spacing: 0;
+}
+.enabled2 {
+  font-size: 1.3vw;
+  /* font-family: 'Inter', sans-serif; */
+  /* font-weight: lighter; */
+  text-align: left;
+  color: rgb(158, 153, 153);
+  padding-left: 1.5vw;
+}
+
+.third__section {
+  padding-top: 5%;
+  background-color: #fff;
+  width: 100%;
+}
+
+.purple_ {
+  font-size: 4vw;
+  font-family: "Roboto";
+  color: #cc66ff;
+  font-weight: bolder;
+}
+
+.explore-merch {
+  color: rgb(188, 184, 184);
+  margin-left: 12%;
+  font-weight: 300;
+  font-size: 1.8vw;
+  font-family: "Roboto";
+}
+
+.keys {
+  display: flex;
+  justify-content: space-around;
+}
+
+.enabled3 {
+  font-size: 2.5vw;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 3vw;
+}
+
+.enabled4 {
+  background-color: #cc66ff;
+  height: 0.5vw;
+  width: 12vw;
+  margin-top: -5%;
+  margin-left: 11%;
+  margin-bottom: 5.5vw;
+}
+.enabled5 {
+  background-color: #cc66ff;
+  height: 0.5vw;
+  width: 8vw;
+  margin-top: -5%;
+  margin-left: 11%;
+  margin-bottom: 5.5vw;
+}
+.enabled6 {
+  background-color: #cc66ff;
+  height: 0.5vw;
+  width: 15vw;
+  margin-top: -5%;
+  margin-left: 11%;
+  margin-bottom: 5.5vw;
+}
+.enabled7 {
+  background-color: #cc66ff;
+  height: 0.5vw;
+  width: 18vw;
+  margin-top: -5%;
+  margin-left: 11%;
+  margin-bottom: 5.5vw;
+}
+.support2 {
+  color: rgb(188, 184, 184);
+  text-align: left;
+  margin-left: 5%;
+  font-family: "Inter", sans-serif;
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 1.5vw;
+  box-shadow: 1vw 1vw 2vw rgb(188, 184, 184);
+  height: 5vw;
+  width: 40vw;
+  border-radius: 20px;
+}
+
+.support {
+  margin-bottom: 2vw;
+}
+
+.about {
+  height: 205vh;
+}
+
+.about-head {
+  color: #111;
+  font-size: 4.5vw;
+  text-align: center;
+  font-family: "RadioGrotesk Regular";
+}
+
+.box {
+  display: block;
+}
+
+.whatxade {
+  width: 34%;
+  height: 80vh;
+  margin-left: 15%;
+  border-radius: 20px;
+  background-color: rgb(70, 73, 75);
+  font-family: "RadioGrotesk Regular";
+}
+
+.whatxade-head {
+  margin-left: 15%;
+  padding-top: 5%;
+  font-size: 3vw;
+  color: #fff;
+}
+
+.meetxade {
+  width: 34%;
+  height: 80vh;
+  margin-right: 15%;
+  margin-top: -80vh;
+  border-radius: 20px;
+  background-color: #0091ff;
+  font-family: "RadioGrotesk Regular";
+  float: right;
+}
+
+.meetxade-head {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 3vw;
+  color: #fff;
+}
+
+.learn {
+  margin-left: 37%;
+  font-family: "RadioGrotesk Regular";
+  margin-top: -50%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2fa4ff;
+  border-radius: 10px;
+  padding: 0.5vw 0.8vw;
+  font-size: 1.5vw;
+  margin-top: -10%;
+}
+
+.learn1 {
+  margin-left: 3%;
+  font-family: "RadioGrotesk Regular";
+  text-decoration: none;
+  color: #fff;
+  background-color: #2fa4ff;
+  border-radius: 10px;
+  padding: 0.5vw 0.8vw;
+  font-size: 1.5vw;
+  margin-top: -10%;
+}
+
+.video {
+  height: 60vh;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.block {
+  color: rgb(70, 73, 75);
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  font-size: 2vw;
+}
+
+.tldr {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 1.8vw;
+  text-align: center;
+  color: #fff;
+}
+
+.read {
+  margin-left: 37%;
+  margin-top: -10%;
+  font-family: "RadioGrotesk Regular";
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+.neobank {
+  margin-top: 5%;
+  height: 60vh;
+}
+
+.worldsfirst {
+  font-family: "Roboto";
+  font-size: 5vw;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  /*
+  background: linear-gradient(
+        90deg,
+        rgb(255, 183, 83) 0%,
+        rgb(255, 173, 175) 85%,
+        rgba(217, 141, 156, 0.7) 100%
+      )
+      100% center / cover,
+    url(https://cdn.robinhood.com/assets/generated_assets/brand/_next/static/images/noise__d63eaf5….svg)
+      rgb(240, 170, 165);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  */
+}
+
+.fuckuharshal {
+  color: red;
+  background-clip: text;
+  -webkit-text-fill-color: red;
+}
+
+.worldsfirst-body {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 3vw;
+  text-transform: capitalize;
+  color: rgb(98, 98, 98);
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #000;
+  height: auto;
+  width: 100vw;
+
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+
+  border-radius: 50%;
+}
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: blue;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 12px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom p a {
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+.footer-menu {
+  float: right;
+}
+.footer-menu ul {
+  display: flex;
+}
+.footer-menu ul li {
+  padding-right: 10px;
+  display: block;
+}
+.footer-menu ul li a {
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover {
+  color: #27bcda;
+}
+
+@media (max-width: 500px) {
+  .footer-menu ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+nav {
+  display: none;
+}
+
+.responselogo {
+  display: none;
+}
+
+.webapp1 {
+  display: none;
+}
+
+.learn2 {
+  display: none;
+}
+
+.single-body1 {
+  display: none;
+}
+
+.loan-body1 {
+  display: none;
+}
+
+.tools-body1 {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.explore1 {
+  display: none;
+}
+
+.mobile1 {
+  display: none;
+}
+
+.savings {
+  overflow: hidden;
+  background: transparent;
+}
+.global {
+  overflow: hidden;
+  background: transparent;
+}
+.tools {
+  overflow: hidden;
+  background: transparent;
+}
+.loan {
+  overflow: hidden;
+  background: transparent;
+}
+.secure {
+  overflow: hidden;
+  background: transparent;
+}
+.security {
+  overflow: hidden;
+  background: transparent;
+}
+.about {
+  overflow: hidden;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  * {
+    clear: both;
+    overflow-wrap: normal;
+    overflow-x: hidden;
+  }
+
+  .landing {
+    height: 90vh;
+  }
+
+  .header {
+    width: 150%;
+    height: 100%;
+    margin-left: 0;
+    overflow: hidden;
+  }
+
+  .header h1 {
+    margin: 0;
+    margin-top: 5%;
+    font-size: 15vw;
+    letter-spacing: 0.001em;
+  }
+
+  .rw-words-1 span {
+    font-size: 23vw;
+    margin-top: -5%;
+    margin-left: -20%;
+  }
+
+  .rw-words-1 span:nth-child(2) {
+    margin-left: -15%;
+  }
+
+  .rw-words-1 span:nth-child(4) {
+    margin-left: -33%;
+  }
+
+  .rw-words-1 span:nth-child(5) {
+    margin-left: -36%;
+  }
+
+  .rw-words-1 span:nth-child(6) {
+    margin-left: -25%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .responselogo {
+    display: inline-block;
+    font-family: "Lemon/Milk light Regular", BlinkMacSystemFont;
+    color: #000;
+    padding-left: 2vw;
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+
+  .left,
+  .right {
+    display: none;
+  }
+
+  .subtext {
+    margin-top: 25%;
+    margin-left: -33%;
+    font-size: 4.8vw;
+  }
+
+  .webapp1 {
+    display: block;
+    font-size: 5vw;
+    padding: 1.5vw 1.8vw;
+    float: right;
+    border-radius: 30px;
+    border: 3px solid #333;
+    background-color: #333;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Josefin Sans";
+    font-weight: 500;
+    margin-top: 3%;
+  }
+
+  .learn2 {
+    display: inline-block;
+    margin-left: 20%;
+    font-family: "RadioGrotesk Regular";
+    text-decoration: none;
+    color: #fff;
+    background-color: #2fa4ff;
+    border-radius: 10px;
+    padding: 1.5vw 1.8vw;
+    font-size: 5.5vw;
+    margin-top: 5vw;
+  }
+
+  .savings-header {
+    margin-top: 3%;
+    font-size: 17vw;
+  }
+
+  .savings-content {
+    margin: 0;
+  }
+
+  .earn-18 {
+    font-size: 9vw;
+    margin-left: 2%;
+  }
+
+  .earn-body {
+    font-size: 6vw;
+    margin-top: 60%;
+  }
+
+  .payment-img {
+    margin-top: -90%;
+    padding-left: -50%;
+    width: 90%;
+  }
+
+  .savings-header {
+    margin-top: 5%;
+    font-size: 17vw;
+  }
+
+  .savings-content {
+    margin: 0;
+  }
+
+  .earn-18 {
+    font-size: 9vw;
+    margin-left: 2%;
+  }
+
+  .earn-body {
+    font-size: 6vw;
+    margin-top: 70%;
+  }
+
+  .payment-img {
+    margin-top: -100%;
+    padding-left: -50%;
+    width: 95%;
+  }
+
+  .global-header {
+    margin-top: 5%;
+    font-size: 17vw;
+  }
+
+  .single-18 {
+    font-size: 10vw;
+    margin-left: 10%;
+    margin-top: -2%;
+  }
+
+  .single-body1 {
+    display: inline-block;
+    font-size: 6vw;
+    margin-top: 60%;
+    font-family: "RadioGrotesk Regular";
+    color: #808080;
+    text-transform: capitalize;
+  }
+
+  .single-body {
+    display: none;
+  }
+
+  .global-img {
+    margin-top: -110%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .loan-header {
+    margin-top: 5%;
+    font-size: 17vw;
+  }
+
+  .loan-18 {
+    font-size: 9.5vw;
+    margin-top: -2%;
+    margin-left: 0%;
+  }
+
+  .loan-body {
+    display: none;
+  }
+
+  .loan-body1 {
+    display: inline-block;
+    font-size: 6vw;
+    margin-top: 60%;
+    font-family: "RadioGrotesk Regular";
+    color: #808080;
+    text-transform: capitalize;
+  }
+
+  .bull {
+    margin-top: -120%;
+    margin-right: 10%;
+    width: 80%;
+  }
+
+  .tools-header {
+    margin-top: 5%;
+    font-size: 17vw;
+  }
+
+  .tools-18 {
+    font-size: 10.5vw;
+    margin-top: -2%;
+    margin-left: 9.5%;
+  }
+
+  .tools-body {
+    display: none;
+  }
+
+  .tools-body1 {
+    display: inline-block;
+    font-size: 5.4vw;
+    margin-top: 60%;
+    margin-left: 1%;
+    font-family: "RadioGrotesk Regular";
+    color: #808080;
+    text-transform: capitalize;
+  }
+
+  .stock {
+    margin-top: -120%;
+    width: 75%;
+  }
+
+  .security-head {
+    margin-left: 8%;
+  }
+
+  .security-header {
+    font-size: 12vw;
+  }
+
+  .blue_ {
+    font-size: 12vw;
+  }
+
+  .explore {
+    font-size: 4vw;
+    margin-left: 5%;
+  }
+
+  .key__section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .one {
+    width: 100%;
+  }
+
+  .left__key {
+    width: 98%;
+    height: 50vw;
+    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: hidden;
+    box-shadow: 3px 3px 10px rgb(189, 187, 187);
+  }
+
+  .left__key1 {
+    width: 98%;
+    height: 50vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 3px 3px 10px rgb(189, 187, 187);
+    margin-top: 5%;
+  }
+
+  .blue__side {
+    height: 110%;
+    overflow: hidden;
+  }
+
+  .blue__side1 {
+    height: 110%;
+    overflow: hidden;
+  }
+
+  .blue__sid {
+    margin: 0;
+    padding: 4.5rem 0.3rem;
+  }
+
+  .enabled {
+    font-size: 4.5vw;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 2.5vw;
+    letter-spacing: 0;
+  }
+
+  .enabled2 {
+    font-size: 4.5vw;
+    /* font-family: 'Inter', sans-serif; */
+    /* font-weight: lighter; */
+    text-align: left;
+    color: rgb(158, 153, 153);
+    padding-left: 2.5vw;
+  }
+
+  .img6 {
+    display: none;
+  }
+
+  .sub {
+    background-color: transparent;
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+    height: 100%;
+  }
+
+  .purple_ {
+    font-size: 10vw;
+    margin: 0;
+  }
+
+  .mobile {
+    display: inline-block;
+    margin-top: -12%;
+    margin-left: -21%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .explore {
+    display: none;
+  }
+
+  .explore1 {
+    display: inline-block;
+    color: rgb(188, 184, 184);
+    margin-left: 4%;
+    font-weight: 300;
+    font-size: 5.5vw;
+    font-family: "Roboto";
+  }
+
+  .mobile1 {
+    display: inline-block;
+  }
+
+  .keys {
+    height: 100%;
+    width: 100%;
+  }
+
+  .enabled3 {
+    font-size: 7vw;
+  }
+
+  .enabled4 {
+    height: 1vw;
+    width: 50vw;
+    margin-bottom: 45vw;
+    margin-left: 5%;
+  }
+
+  .enabled5 {
+    height: 1vw;
+    width: 30vw;
+    margin-left: 5%;
+    margin-bottom: 45vw;
+  }
+
+  .enabled6 {
+    height: 1vw;
+    width: 60vw;
+    margin-bottom: 45vw;
+    margin-left: 5%;
+  }
+
+  .enabled7 {
+    height: 1vw;
+    width: 55vw;
+    margin-bottom: 45vw;
+    margin-left: 5%;
+  }
+
+  .support3 {
+    color: rgb(188, 184, 184);
+    text-align: left;
+    margin-left: 5%;
+    font-family: "Inter", sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 5vw;
+    box-shadow: 1vw 1vw 2vw rgb(188 184 184);
+    height: 25vw;
+    width: 80vw;
+    border-radius: 10px;
+    margin-bottom: 25%;
+  }
+
+  .first {
+    margin-top: -220%;
+  }
+
+  .about-head {
+    margin-top: 40%;
+    font-size: 15vw;
+  }
+
+  .security {
+    height: 150vh;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .video {
+    width: 100%;
+    height: 40vh;
+    margin-left: 0%;
+  }
+
+  .box {
+    margin-top: 5%;
+  }
+
+  .block {
+    font-size: 5vw;
+  }
+
+  .whatxade {
+    width: 90%;
+    height: 70vh;
+    margin-left: 5%;
+    border-radius: 20px;
+    font-family: "RadioGrotesk Regular";
+  }
+
+  .whatxade-head {
+    font-size: 7vw;
+    margin-left: 12%;
+  }
+
+  .meetxade {
+    margin-top: 10%;
+    width: 90%;
+    height: 70vh;
+    margin-right: 5%;
+    border-radius: 20px;
+    font-family: "RadioGrotesk Regular";
+  }
+
+  .meetxade-head {
+    font-size: 7vw;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .tldr {
+    font-size: 5vw;
+  }
+
+  .read {
+    margin-left: 37%;
+    font-family: "RadioGrotesk Regular";
+    color: #fff;
+    font-size: 5vw;
+  }
+
+  .secure {
+    height: 170vh;
+  }
+
+  .about {
+    height: 230vh;
+    background: ghostwhite;
+  }
+
+  hr.line {
+    display: none;
+    border: none;
+  }
+
+  .neobank {
+    margin-top: -20%;
+  }
+
+  .worldsfirst {
+    font-size: 15vw;
+  }
+
+  .worldsfirst-body {
+    font-size: 5vw;
+    text-align: left;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  footer {
+    margin-top: 10%;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+/*
+      <div class="keys">
+        <div class="sub">
+          <p class="enabled3">Dedicated support</p>
+          <p class="enabled4"></p>
+          <p class="enabled3">Custom API</p>
+          <p class="enabled5"></p>
+          <p class="enabled3">Multiaccount login</p>
+          <p class="enabled6"></p>
+          <p class="enabled3">Payment processors</p>
+          <p class="enabled7"></p>
+          <div class="main__support">
+            <p class="support2">
+              Chat support, call support and dedicated concierge service are
+              available 24/7 for all needs
+            </p>
+            <p class="support2">
+              Customized for the business needs with your inputs optimized by
+              our advanced AI
+            </p>
+            <p class="support2">
+              Get a multiaccount subscription with personal cards and multiple
+              useful features
+            </p>
+            <p class="support2">
+              The lowest fees and instant settlements for more than 40
+              currencies and crypto
+            </p>
+          </div>
+        </div>
+      </div>
+*/
+
+footer {
+  margin-top: 10%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.svg-inline--fa {
+  vertical-align: -0.2em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter,
+.fa-facebook-f,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover,
+.rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover,
+.rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover,
+.rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover,
+.rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #c13584;
+}
+
+.rounded-social-buttons .social-button.instagram:hover,
+.rounded-social-buttons .social-button.instagram:focus {
+  color: #c13584;
+  background: #fefefe;
+  border-color: #c13584;
+}
+
+.rounded-social-buttons .social-button.medium {
+  background: #222;
+}
+
+.rounded-social-buttons .social-button.medium:hover,
+.rounded-social-buttons .social-button.medium:focus {
+  color: #222;
+  background: #fefefe;
+  border-color: #222;
+}
+
+.rounded-social-buttons .social-button.phone {
+  background: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.rounded-social-buttons .social-button.medium:hover,
+.rounded-social-buttons .social-button.medium:focus {
+  color: #333;
+  background: #fefefe;
+  border-color: #333;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
